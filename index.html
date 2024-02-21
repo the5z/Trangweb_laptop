@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng sách</title>
+    <link rel="stylesheet" hnef="sanpham.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logosach img{
+    width: 5%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+header{
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav li{
+    margin-right: 20px;
+    margin-top: 15px;
+}
+nav li:hover{
+    background-color: brown;
+    padding: 5px;
+    border-radius: 5px;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 15px 10px 0px;
+}
+main{
+    padding: 50px;
+}
+.section{
+    margin-bottom:50px;
+}
+.section p{
+    text-align: center;
+}
+.section h2{
+    text-align: center;
+    margin: 0 0 20px;
+    color: blueviolet;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product{
+    width: calc(33.3% - 20px);
+    margin-bottom: 50px;
+    text-align: center;
+}
+.product img{
+    width: 100%;
+    margin-bottom: 20px;
+    border: 3px solid purple;
+    border-radius: 10px;
+}
+.product h3{
+    margin: 0;
+}
+.product p{
+    margin: 10px 0;
+}
+.product button{
+    background-color: black;
+    color: aliceblue;
+    border: 1px solid gainsboro;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section form{
+    margin-left: 35%;
+}
+section form input{
+    margin-top: 50px;
+    width: 300px;
+    height: 30px;
+    margin-left:370px ;
+}
+#email{
+    margin-left: 74px;
+}
+#message{
+    margin-left: 57px;
+}
+section form button{
+    margin-top: 20px;
+    width: 50px;
+    height: 25px;
+    margin-left: 370px;
+}
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+@media screen and (max-width:768px){
+    header{
+        padding: 10px;
+    }
+    nav ul{
+        flex-wrap: wrap;
+    }
+    nav li{
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .products{
+        flex-wrap: wrap;
+    }
+    .product{
+        width: calc(100%/2-10px);
+        margin-bottom: 30px;
+    }
+    
+}
+</style>
+<body>
+    <div>
+        <img src="images/logosach.jpg" alt="">
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a hnef="#">Trang chủ</a></li>
+                <li><a hnef="#">Sách mới</a></li>
+                <li><a hnef="#">Sách bán chạy</a></li>
+                <li><a hnef="#">Giới thiệu</a></li>
+                <li><a hnef="#">Đăng nhập/Đăng ký</a></li>
+            </ul>
+        </nav>
+        <h1>Danh mục sản phẩm</h1>
+    </header>
+    <main>
+        <!--Section 1-->>
+        <section class="section">
+            <h2>Danh mục sách mới</h2>
+            <div class="product">
+                <!--Sản phẩm số 1-->>
+                <div class="product">
+                    <img src="images/sach1.jpg" alt="Sách 1">
+                    <h3>Sách 1</h3>
+                    <p>Giá: 150000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/sach2.jpg" alt="Sách 2">
+                    <h3>Sách 2</h3>
+                    <p>Giá: 170000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/sach3.jpg" alt="Sách 3">
+                    <h3>Sách 3</h3>
+                    <p>Giá: 190000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+            </div>
+        </section>
+        <!--Section 2-->>
+        <section class="section">
+            <h2>Danh mục sách bán chạy</h2>
+            <div class="product">
+                <!--Sản phẩm số 2-->>
+                <div class="product">
+                    <img src="images/sach4.jpg" alt="Sách 4">
+                    <h3>Sách 4</h3>
+                    <p>Giá: 120000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/sach5.jpg" alt="Sách 5">
+                    <h3>Sách 5</h3>
+                    <p>Giá: 140000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="product">
+                    <img src="images/sach6.jpg" alt="Sách 6">
+                    <h3>Sách 6</h3>
+                    <p>Giá: 160000 VNĐ</p>
+                    <button>Mua ngay</button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--Section 3-->>
+    <section class="section">
+        <h2>Danh mục sách hot</h2>
+        <div class="product">
+            <!--Sản phẩm số 3-->>
+            <div class="product">
+                <img src="images/sach7.jpg" alt="Sách 7">
+                <h3>Sách 7</h3>
+                <p>Giá: 180000 VNĐ</p><button>Mua ngay</button>
+            </div>
+            <div class="product">
+                <img src="images/sach8.jpg" alt="Sách 8">
+                <h3>Sách 8</h3>
+                <p>Giá: 200000 VNĐ</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product">
+                <img src="images/sach9.jpg" alt="Sách 9">
+                <h3>Sách 9</h3>
+                <p>Giá: 220000 VNĐ</p>
+                <button>Mua ngay</button>
+            </div>
+        </div>
+    </section>
+    <!--Section 4-->
+    <section>
+        <h2>Liên hệ</h2>
+        <form action="">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br>
+            <label for="messenge">Messenge:</label>
+            <input type="text" id="messenge" name="messenge"><br>
+            
+        </form>
+    </section>
+    </main>
+    <footer>
+        &copy; 2024 by Lại Minh Hiệp
+    </footer>
+</body>
+</html>
